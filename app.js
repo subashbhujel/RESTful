@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use('/api/books', bookRouter);
+// In future if you wish to add more routes, here's how you do it:
 //app.use('/api/author', authorRouter);
 
 app.get('/', function(req, res) {
