@@ -16,9 +16,18 @@ var routes = function() {
         .get(function(req, res) {
             var query = {};
 
-            if (req.query.genre) {
-                query.genre = req.query;
+            // This will work for all Books model query like:
+            // genre=fiction OR author=Subash Bhujel OR title=war and peace OR reach=true ....
+            if (req.query) {
+                query = req.query;
             }
+
+            // To filter specific query param you can do something like:
+            /*
+            if (req.query.genre) {
+                query.genre = req.query.genre;
+            }
+            */
 
             Book.find(query, function(err, books) {
                 if (err) {

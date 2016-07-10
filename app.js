@@ -1,8 +1,7 @@
 var express = require('express'),
     mongoose = require('mongoose'),
-    bodyParser = require('body-parser');
-
-// var Book = require('./models/bookModel.js');
+    // Parse incoming request bodies in a middleware before your handlers, available under the req.body property.
+    bodyParser = require('body-parser'); //https://github.com/expressjs/body-parser
 
 var db = mongoose.connect('mongodb://localhost/bookAPI');
 var app = express();
