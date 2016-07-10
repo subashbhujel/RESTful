@@ -8,5 +8,5 @@ var bookModel = new Schema({
     read: { type: Boolean, default: false }
 });
 
-var bookMode
+// 'Book' is just an alias. You can name it anything. 
 module.exports = mongoose.model('Book', bookModel);
