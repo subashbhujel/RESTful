@@ -9,3 +9,7 @@ Used the following frameworks:
 - MongoDB
 - Body-parser
 
+How to import data into your MongoDB database?
+Make sure MongoDB is running then run 'mongo bookAPI < booksJson.js' from the command line.
+
+Requirement: Install MongoDB. Start mongodb using mongod.exe
